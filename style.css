@@ -76,20 +76,72 @@ p {
 @media (max-width:1024px) {
     .button-group {
         display: flex;
-
     }
 }
 
 /* O que é especifico do desktop */
-@media (min-width:1024px) {
+@media (min-width:1240px) {
     main {
         height: 70vh;
     }
 
+    .terceiraseção,
+    h3,
+    p {
+        display: flex;
+        gap: 10px;
+
+        img {
+            width: 755px;
+            height: 600px;
+        }
+    }
+
+    .workflow-section,
+    {
+        display: flex;
+        gap: 10px;
+
+        img {
+            width: 755px;
+            height: 600px;
+        }
+    }
+
+    .caixa {
+        width: 100px;
+        height: 100px;
+    }
 
     .button-group {
         display: flex;
+    }
 
+
+}
+
+.workflow-section {
+    img {
+        height: 150px;
+        width: 150px;
     }
 }
 
+
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.social-links {
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.logos {
+    margin-top: 15px;
+}
