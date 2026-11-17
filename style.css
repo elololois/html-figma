@@ -68,6 +68,30 @@ p {
     padding-bottom: 64px;
 }
 
+footer {
+    background-color: #F5F7F7;
+    width: 100%;
+}
+
+footer * {
+    padding: 8px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--colors-gray-500, #4C545C);
+    color: #4C545C;
+    font-family: "Bai Jamjuree";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
 
 /* O que é especifico do mobile */
 @media (max-width:600px) {}
@@ -97,8 +121,7 @@ p {
         }
     }
 
-    .workflow-section,
-    {
+    .workflow-section {
         display: flex;
         gap: 10px;
 
@@ -118,30 +141,40 @@ p {
     }
 
 
-}
 
-.workflow-section {
-    img {
-        height: 150px;
-        width: 150px;
+
+        footer {
+            display: flex;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0;
+            text-align: left;
+        }
+
+        li {
+            margin: 0;
+        }
     }
-}
 
 
 
-.footer-links {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 25px;
-}
+    .footer-links {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+    }
 
-.social-links {
-    text-align: center;
-    align-items: center;
-    margin-top: 25px;
-}
+    .social-links {
+        text-align: center;
+        align-items: center;
+        margin-top: 25px;
+    }
 
-.logos {
-    margin-top: 15px;
-}
+    .logos {
+        margin-top: 15px;
+    }
