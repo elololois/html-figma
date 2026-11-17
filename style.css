@@ -1,269 +1,95 @@
+/* Configurações Globais */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0 auto;
+    /* Elemento centralizado */
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
 }
 
 body {
-  font-family: 'Bai Jamjuree', sans-serif;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  background-image: url('fumaca.png');
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100% 363px;
-  text-align: center;
-}
-main{
-  max-width: 375px;
-  padding: 48px 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    /* Garantir que todo o fluxo do site esteja centralizado na página */
+    display: flex;
+    flex-direction: column;
+    background-image: url('fumaca.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding: 128px 28px 56px 28px;
 }
 
-@media (min-width: 769px) {
-  .header {
-    min-height: 70vh;
-  }
-}
-
-@media (min-width:1029px) {
-  .header {
-    min-height: 70vh;
-  }
-}
-.logo-container {
-  margin-bottom: 48px;
-}
-
-.logo {
-  width: 125px;
-  height: auto;
-}
-
-.title {
-  color: #030303;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-.description {
-  color: #000000;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 48px;
-}
-
+/* Quais tamanho e estilos que não mudam */
 .button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
-  display: block;
-  width: 100%;
-  padding: 16px 24px;
-  border-radius: 28px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 16px 8px;
+    width: 344px;
+    border-radius: 16px;
+    margin: 12px auto;
+    color: white;
+    box-shadow: 0px -3px 0px 0px #00000027 inset;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
 
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
 }
 
 .btn-ios {
-  background-color: #26baa4;
-  box-shadow: 0px 10px 20px rgba(38, 186, 164, 0.25);
+    background: var(--colors-green-500, #26BBA4);
+    border-bottom: 3px solid #1d907f;
 }
-
 
 .btn-mac {
-  background-color: #6173ff;
-  box-shadow: 0px 10px 20px rgba(97, 115, 255, 0.25);
+    background: var(--colors-blue-500, #6174FF);
+    border-bottom: 3px solid hsl(233, 100%, 59%);
 }
 
-.h1,
-.btn,
-bai-jamjuree-semibold {
-  font-family: "Bai Jamjuree";
-  font-weight: 600;
-  font-style: normal;
+h1,
+h2,
+h3 {
+    color: var(--colors-gray-700, #4C545C);
+    margin-top: 64px;
+    margin-bottom: 16px;
 }
 
-.p,
-bai-jamjuree-regular {
-  font-family: "Bai Jamjuree";
-  font-weight: 400;
-  font-style: normal;
-}
-
-.computer-image img {
-  max-width: 608px;
-  height: auto;
-  display: block;
+p {
+    color: var(--colors-gray-500, #9EABB2);
+    padding-bottom: 64px;
 }
 
 
-.features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 350px;
+/* O que é especifico do mobile */
+@media (max-width:600px) {}
+
+/* O que é especifico do tablet */
+@media (max-width:1024px) {
+    .button-group {
+        display: flex;
+
+    }
 }
 
-.feature-item h3 {
-  margin-bottom: 8px;
+/* O que é especifico do desktop */
+@media (min-width:1024px) {
+    main {
+        height: 70vh;
+    }
+
+
+    .button-group {
+        display: flex;
+
+    }
 }
 
-picture {
-  width: 100px;
-  height: 100px;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-
-.workflow-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin-top: 80px;
-}
-
-.workflow-feature img {
-  flex-direction: column;
-  align-items: center;
-  width: 44px;
-  height: 40px;
-}
-
-.workflow-features img {
-  flex-direction: column;
-  align-items: center;
-  width: 44px;
-  height: 40px;
-}
-
-.telaecelular {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.logos {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-direction: column;
-  margin-top: 90px;
-  align-items: center;
-}
-
-.download {
-  text-align: center;
-  padding: 80px 24px 130px 24px;
-}
-
-
-.download .description {
-  margin-bottom: 48px;
-}
-
-
-
-
-footer {
-  background-color:white;
-}
-
-
-.footer-container {
-  max-width: 1120px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-
-.footer-logo {
-  width: 55px;
-}
-
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-
-.footer-links a {
-  color: rgb(85, 95, 128);
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-
-.footer-links a:hover {
-  color: aqua;
-}
-
-
-.social-links {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-
-.social-links img {
-  width: 24px;
-  height: 24px;
-
-
-}
-
-
-@media (min-width: 768px) {
-
-
-  .parceiros {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px 32px;
-  }
-}
