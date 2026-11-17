@@ -15,31 +15,21 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 363px;
   text-align: center;
+
 }
 
-@media (min-width:1300px) {
-  body {
-    background-color: rgb(247, 146, 146);
-     padding: 10px 20px;
-        font-size: 15px;
+@media (min-width: 769px) {
+  .header {
+    min-height: 70vh;
   }
 }
 
-@media ((min-width:500px) and (max-width: 1299px)) {
-  body {
-    background-color: rgb(170, 241, 170);
-     padding: 10px 20px;
-        font-size: 15px;
+@media (min-width:1029px) {
+  .header {
+    min-height: 70vh;
   }
 }
 
-@media (max-width: 500px) {
-  body {
-    background-color: rgb(187, 243, 243);
-     padding: 10px 20px;
-        font-size: 15px;
-  }
-}
 
 .hero {
   max-width: 375px;
@@ -105,7 +95,9 @@ body {
   box-shadow: 0px 10px 20px rgba(97, 115, 255, 0.25);
 }
 
-.h1,.btn,bai-jamjuree-semibold {
+.h1,
+.btn,
+bai-jamjuree-semibold {
   font-family: "Bai Jamjuree";
   font-weight: 600;
   font-style: normal;
@@ -135,31 +127,148 @@ bai-jamjuree-regular {
 .feature-item h3 {
   margin-bottom: 8px;
 }
-@media (min-width: 900px) {
-  .snippets-content {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    gap: 80px;
-  }
-}
-.telaecelular{
-   max-width: 608px;
-  height: auto;
-  display:flex;
+
+picture {
+  width: 100px;
+  height: 100px;
+
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.workflow-section{
+section {
+  margin-bottom: 40px;
+}
+
+
+.workflow-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   margin-top: 80px;
 }
-.workflow-features img{
-  width: 120px;
- height: 120px;
+
+.workflow-feature img {
+  flex-direction: column;
+  align-items: center;
+  width: 44px;
+  height: 40px;
+}
+
+.workflow-features img {
+  flex-direction: column;
+  align-items: center;
+  width: 44px;
+  height: 40px;
+}
+
+.telaecelular {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logos {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 90px;
+  align-items: center;
+}
+
+.download {
+  text-align: center;
+  padding: 80px 24px 130px 24px;
+}
+
+
+.download .description {
+  margin-bottom: 48px;
+}
+
+
+
+
+footer {
+  background-color:white;
+}
+
+
+.footer-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.footer-logo {
+  width: 55px;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.footer-links a {
+  color: rgb(85, 95, 128);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+
+.footer-links a:hover {
+  color: aqua;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+  .parceiros {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 32px;
+  }
 }
